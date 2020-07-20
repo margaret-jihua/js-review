@@ -71,3 +71,27 @@ headerTwo.classList.remove('header-two')
 
 console.log(headerTwo);
 
+// Eventlistener
+headerTwo.addEventListener("click", function(){
+    headerTwo.textContent = "Mars"
+})
+
+// make another element
+const headerThree = document.createElement('h3')
+headerThree.textContent = 'Friends'
+container.appendChild(headerThree)
+
+const list = document.createElement('ul')
+
+for (let i = 0; i< friends.length; i++){
+    let eachFri = friends[i]
+
+    const listItem = document.createElement('li')
+    listItem.textContent = eachFri
+
+    list.appendChild(listItem)
+}
+
+headerThree.addEventListener("click", function(){
+    container.appendChild(list)
+})

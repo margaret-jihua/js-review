@@ -58,3 +58,25 @@ headerTwo.classList.add('subtitle')
 headerTwo.setAttribute('class', 'header-two') // subtitle will be overwrite by header-two
 headerTwo.classList.remove('header-two')
 ```
+
+## EventListener
+```
+const headerThree = document.createElement('h3')
+headerThree.textContent = 'Friends'
+container.appendChild(headerThree)
+
+const list = document.createElement('ul')
+
+for (let i = 0; i< friends.length; i++){
+    let eachFri = friends[i]
+
+    const listItem = document.createElement('li')
+    listItem.textContent = eachFri
+
+    list.appendChild(listItem)
+}
+
+headerThree.addEventListener("click", function(){
+    container.appendChild(list)
+})
+```
