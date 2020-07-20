@@ -29,3 +29,26 @@ console.log(tesla);
 console.log(tesla.vehicals.vehicalThree);
 console.log(tesla['vehicals']['vehicalThree']);
 tesla.print();
+
+// Functions
+
+function printFriends(array){
+    array.forEach(friend => {
+        console.log(friend)
+    })
+}
+
+//standard function
+function add(num1, num2){
+    return num1 + num2
+}
+
+// function expression
+const multiply = function(num1, num2) {
+    return num1 * num2
+}
+
+//arrow function
+const substract = (num1, num2) => {
+    return num1 - num2
+}
