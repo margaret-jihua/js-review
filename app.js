@@ -152,25 +152,3 @@ function FizzBuzz(arr){
 
 console.log(FizzBuzz([3,5,15,20,7]));
 
-// Write a function `reverseStr(str)` that takes in a string as a parameter and
-// returns the string but with the characters in reverse.
-//
-// Examples:
-//
-// reverseStr('bootcamp'); //=> 'pmactoob'
-// reverseStr('General Assembly'); //=> 'ylbmessA lareneG'
-
-// create a function pass by a str
-// create a empty string
-// put .reverse
-// return string of chacters in reverse
-
-function reverseStr(str){
-    let newStr = ''
-    let newArr = str.split('');
-    newArr = newArr.reverse();
-    newStr = newArr.join('');
-    return newStr;
-}
-
-console.log(reverseStr('bootcamp'));
