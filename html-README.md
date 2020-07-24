@@ -41,3 +41,37 @@
     <div id="box"></div>
 ```
 
+## Form
+
+Use `action` connect to result html page
+```
+<form action="result.html" method="GET" enctype="multipart/form-data">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+```
+Get values and names from `form`
+```
+new URLSearchParams(window.location.search).forEach((value, name) => {
+    console.log(name);
+    console.log(value);
+```
+Display All values and names in result page
+```
+    let nameElement = document.createElement('p')
+    let valueElement = document.createElement('p')
+
+    nameElement.textContent = name
+    valueElement.textContent = value
+    console.log(nameElement, valueElement);
+
+    let resultElement = document.createElement('p')
+    resultElement.textContent = name + ' ' + value
+
+    resultsDiv.appendChild(resultElement)
+```

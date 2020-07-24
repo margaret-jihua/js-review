@@ -59,6 +59,8 @@ function luckySevens(max){
     return result
 }
 
+// for (let i = 7; i <= max; i += 7){
+// result.push(i)
 console.log(luckySevens(25));
 console.log(luckySevens(42));
 
